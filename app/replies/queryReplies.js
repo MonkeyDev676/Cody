@@ -7,7 +7,7 @@ module.exports = {
   'your version': `My version is ${process.env.version}`,
   'my level': ({ userInfo }) => `You Current Level is **${userInfo.level}**`,
   'my profile': ({ message, userInfo }) => new Discord.MessageEmbed()
-    .setTitle(`Profile of ${message.author.username}`)
+    .setTitle(`${message.author.username} 's Profile `)
     .setColor(color.main)
-    .setDescription([`Level: ${userInfo.level}`, `XP: ${userInfo.xp}/100`].join('\n')),
+    .setDescription([`Level: ${userInfo.level}`, `Exp: ${userInfo.xp}/100`].join('\n')),
 };
