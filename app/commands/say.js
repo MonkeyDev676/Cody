@@ -13,7 +13,7 @@ module.exports = {
     var msg = collected.first();
     if (!msg) return message.channel.send('You didn\'t send anything!');
     message.channel.send(
-      `> ${msg.content}\n\n Said by **${message.author.username}**`,
+      `> ${msg.content}\n\n Author: **${message.author.username}**`,
       { tts: true },
     );
   },
